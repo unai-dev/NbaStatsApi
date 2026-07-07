@@ -15,6 +15,7 @@ var app = builder.Build();
 app.UseCors();
 
 // minimal endpoint
-app.MapGet("/api/players", () => MOCK_DATA.getPlayers());
+app.MapGet("/api/players", () => MOCK_DATA.GetPlayers());
+app.MapGet("/api/teams", () => MOCK_DATA.GetTeams());
 
 app.Run();
