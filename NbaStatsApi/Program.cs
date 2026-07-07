@@ -1,6 +1,8 @@
 using NbaStatsApi.Data;
 
+/**************************************** SERVICES SECTION ****************************************/
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddCors(cfg =>
 {
     cfg.AddDefaultPolicy(c =>
@@ -10,12 +12,17 @@ builder.Services.AddCors(cfg =>
 });
 
 
+/**************************************** BUILDER SECTION ****************************************/
 var app = builder.Build();
-
 app.UseCors();
 
-// minimal endpoint
+
+/**************************************** MINIMAL ENDPOINTS ****************************************/
+
+/* PLAYERS */
 app.MapGet("/api/players", () => MOCK_DATA.GetPlayers());
+
+/* TEAMS */
 app.MapGet("/api/teams", () => MOCK_DATA.GetTeams());
 
 app.Run();

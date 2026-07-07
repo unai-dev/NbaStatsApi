@@ -2,20 +2,20 @@
 
 public class Team
 {
-    public string Id { get; set; }
-    public string Name { get; set; }
-    public string City { get; set; }
-    public string Abbreviation { get; set; }
-    public string Slug { get; set; }
-    public string Division { get; set; }
+    public string Id { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string City { get; set; } = string.Empty;
+    public string Abbreviation { get; set; } = string.Empty;
+    public string Slug { get; set; } = string.Empty;
+    public string Division { get; set; } = string.Empty;
     public int Overall { get; set; }
-    public string Logo { get; set; }
-    public string Url { get; set; }
-    public string Arena { get; set; }
+    public string Logo { get; set; } = string.Empty;
+    public string Url { get; set; } = string.Empty;
+    public string Arena { get; set; } = string.Empty;
     public int Founded { get; set; }
     public int Championships { get; set; }
-    public TeamRecord Record { get; set; }
-    public TeamColors Colors { get; set; }
+    public TeamRecord? Record { get; set; } 
+    public TeamColors? Colors { get; set; }
     public Conference Conference { get; set; }
 }
 
@@ -33,6 +33,6 @@ public class TeamRecord
 
 public class TeamColors
 {
-    public string Primary { get; set; }
-    public string Secondary { get; set; }
+    public string Primary { get; set; } = string.Empty;
+    public string Secondary { get; set; } = string.Empty;
 }
