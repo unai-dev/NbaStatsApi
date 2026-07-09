@@ -399,7 +399,7 @@ public static class MOCK_DATA
                 Height = "6'1\"",
                 Weight = "205 lbs",
                 Overall = 88,
-                Img = "https://cdn.nba.com/headshots/nba/latest/1040x760/1630161.png",
+                Img = "https://cdn.nba.com/headshots/nba/latest/1040x760/1628973.png",
                 Url = "https://www.nba.com/player/1630161/jalen-brunson",
                 Team = "New York Knicks",
                 Positions = new List<string>{ "PG" },
