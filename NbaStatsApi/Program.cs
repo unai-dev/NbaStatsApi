@@ -1,6 +1,11 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using NbaStatsApi.Config.DB;
 using NbaStatsApi.Data;
+using NbaStatsApi.Features.Auth.Entities;
+using NbaStatsApi.Features.Auth.Services;
+using System.Text;
 
 /**************************************** SERVICES SECTION ****************************************/
 var builder = WebApplication.CreateBuilder(args);
@@ -13,11 +18,38 @@ builder.Services.AddCors(cfg =>
         c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod()));
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddIdentityCore<User>()
+    .AddEntityFrameworkStores<NbaDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<UserManager<User>>();
+builder.Services.AddScoped<SignInManager<User>>();
+
+// Configuración de autenticación JWT
+builder.Services.AddAuthentication().AddJwtBearer(o =>
+{
+    o.MapInboundClaims = false;
+    o.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateAudience = false,
+        ValidateIssuer = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["JWT_KEY"]!)),
+        ClockSkew = TimeSpan.Zero
+    };
+});
 
 
 /**************************************** BUILDER SECTION ****************************************/
 var app = builder.Build();
 app.UseCors();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 
