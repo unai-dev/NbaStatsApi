@@ -3,7 +3,7 @@ using NbaWebTools;
 
 namespace NbaStatsApi.Features.Team.Entities;
 
-public class Team: BaseEntity
+public class O_Team: BaseEntity
 {
     public string Name { get; set; } = string.Empty;
     public string City { get; set; } = string.Empty;
@@ -18,10 +18,10 @@ public class Team: BaseEntity
     public int Championships { get; set; }
     public TeamRecord? Record { get; set; } 
     public TeamColors? Colors { get; set; }
-    public Conference Conference { get; set; }
+    public EConference Conference { get; set; }
 }
 
-public enum Conference
+public enum EConference
 {
     East,
     West,

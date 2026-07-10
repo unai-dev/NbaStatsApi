@@ -1,15 +1,15 @@
 ﻿using NbaStatsApi.Features.Player.Entities;
 using NbaStatsApi.Features.Team.Entities;
 
-namespace NbaStatsApi.Data;
+namespace NbaStatsApi.Tools.MockData;
 
 public static class MOCK_DATA
 {
-    public static IEnumerable<Player> GetPlayers()
+    public static IEnumerable<O_Player> GetPlayers()
     {
-        var PLAYERS = new List<Player>()
+        var PLAYERS = new List<O_Player>()
         {
-            new Player
+            new O_Player
             {
                 Id = "lebron_james",
                 Name = "LeBron James",
@@ -25,7 +25,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 10, Silver = 15, Gold = 25, HallOfFame = 12, Legendary = 5, Total = 67 },
             },
 
-            new Player
+            new O_Player
             {
                 Id = "michael_jordan",
                 Name = "Michael Jordan",
@@ -41,7 +41,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 20, HallOfFame = 15, Legendary = 10, Total = 60 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "kobe_bryant",
                 Name = "Kobe Bryant",
@@ -57,7 +57,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 8, Silver = 12, Gold = 22, HallOfFame = 14, Legendary = 7, Total = 63 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "stephen_curry",
                 Name = "Stephen Curry",
@@ -73,7 +73,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 10, Gold = 18, HallOfFame = 12, Legendary = 8, Total = 54 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "kevin_durant",
                 Name = "Kevin Durant",
@@ -89,7 +89,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 7, Silver = 11, Gold = 20, HallOfFame = 10, Legendary = 6, Total = 54 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "shaquille_oneal",
                 Name = "Shaquille O'Neal",
@@ -105,7 +105,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 8, Gold = 18, HallOfFame = 16, Legendary = 10, Total = 56 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "tim_duncan",
                 Name = "Tim Duncan",
@@ -121,7 +121,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 20, HallOfFame = 12, Legendary = 5, Total = 52 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "nikola_jokic",
                 Name = "Nikola Jokic",
@@ -137,7 +137,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 12, Gold = 18, HallOfFame = 10, Legendary = 4, Total = 50 }
             },
 
-            new Player
+            new O_Player
             {
                 Id = "luka_doncic",
                 Name = "Luka Dončić",
@@ -152,7 +152,7 @@ public static class MOCK_DATA
                 Archetype = "Offensive Maestro",
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 15, HallOfFame = 8, Legendary = 4, Total = 42 }
             },
-            new Player {
+            new O_Player {
                 Id = "giannis_antetokounmpo",
                 Name = "Giannis Antetokounmpo",
                 Slug = "giannis_antetokounmpo",
@@ -167,7 +167,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 12, Gold = 20, HallOfFame = 10, Legendary = 5, Total = 53 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "joel_embiid",
                 Name = "Joel Embiid",
                 Slug = "joel_embiid",
@@ -182,7 +182,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 18, HallOfFame = 12, Legendary = 6, Total = 51 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "jayson_tatum",
                 Name = "Jayson Tatum",
                 Slug = "jayson_tatum",
@@ -197,7 +197,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 10, Gold = 16, HallOfFame = 8, Legendary = 4, Total = 44 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "damian_lillard",
                 Name = "Damian Lillard",
                 Slug = "damian_lillard",
@@ -212,7 +212,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 15, HallOfFame = 7, Legendary = 3, Total = 40 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "anthony_davis",
                 Name = "Anthony Davis",
                 Slug = "anthony_davis",
@@ -227,7 +227,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 12, Gold = 18, HallOfFame = 10, Legendary = 4, Total = 50 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "kawhi_leonard",
                 Name = "Kawhi Leonard",
                 Slug = "kawhi_leonard",
@@ -242,7 +242,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 18, HallOfFame = 12, Legendary = 5, Total = 50 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "jimmy_butler",
                 Name = "Jimmy Butler",
                 Slug = "jimmy_butler",
@@ -257,7 +257,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 6, Silver = 10, Gold = 14, HallOfFame = 8, Legendary = 4, Total = 42 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "trae_young",
                 Name = "Trae Young",
                 Slug = "trae_young",
@@ -272,7 +272,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 8, Gold = 12, HallOfFame = 5, Legendary = 2, Total = 31 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "devin_booker",
                 Name = "Devin Booker",
                 Slug = "devin_booker",
@@ -287,7 +287,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 14, HallOfFame = 7, Legendary = 3, Total = 39 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "shai_gilgeous_alexander",
                 Name = "Shai Gilgeous-Alexander",
                 Slug = "shai_gilgeous_alexander",
@@ -303,7 +303,7 @@ public static class MOCK_DATA
             },
 
             // Jugadores añadidos para completar equipos
-            new Player {
+            new O_Player {
                 Id = "kyrie_irving",
                 Name = "Kyrie Irving",
                 Slug = "kyrie_irving",
@@ -318,7 +318,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 9, Gold = 14, HallOfFame = 6, Legendary = 3, Total = 36 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "paul_george",
                 Name = "Paul George",
                 Slug = "paul_george",
@@ -333,7 +333,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 16, HallOfFame = 8, Legendary = 4, Total = 43 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "ja_morant",
                 Name = "Ja Morant",
                 Slug = "ja_morant",
@@ -348,7 +348,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 11, Gold = 15, HallOfFame = 7, Legendary = 3, Total = 41 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "deaaron_fox",
                 Name = "De'Aaron Fox",
                 Slug = "deaaron_fox",
@@ -363,7 +363,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 9, Gold = 13, HallOfFame = 5, Legendary = 2, Total = 33 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "zion_williamson",
                 Name = "Zion Williamson",
                 Slug = "zion_williamson",
@@ -378,7 +378,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 9, Gold = 14, HallOfFame = 6, Legendary = 3, Total = 37 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "rudy_gobert",
                 Name = "Rudy Gobert",
                 Slug = "rudy_gobert",
@@ -393,7 +393,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 9, Gold = 13, HallOfFame = 7, Legendary = 2, Total = 35 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "jalen_brunson",
                 Name = "Jalen Brunson",
                 Slug = "jalen_brunson",
@@ -408,7 +408,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 4, Silver = 8, Gold = 12, HallOfFame = 5, Legendary = 1, Total = 30 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "karl_anthony_towns",
                 Name = "Karl-Anthony Towns",
                 Slug = "karl_anthony_towns",
@@ -423,7 +423,7 @@ public static class MOCK_DATA
                 Badges = new Badge { Bronze = 5, Silver = 10, Gold = 14, HallOfFame = 6, Legendary = 2, Total = 37 }
             },
 
-            new Player {
+            new O_Player {
                 Id = "bam_adebayo",
                 Name = "Bam Adebayo",
                 Slug = "bam_adebayo",
@@ -442,11 +442,11 @@ public static class MOCK_DATA
 
         return PLAYERS;
     }
-    public static IEnumerable<Team> GetTeams()
+    public static IEnumerable<O_Team> GetTeams()
     {
-        return new List<Team>
+        return new List<O_Team>
         {
-            new Team {
+            new O_Team {
                 Id = "1",
                 Name = "Celtics",
                 City = "Boston",
@@ -463,7 +463,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.15 150)", Secondary = "oklch(0.85 0.06 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "2",
                 Name = "Nuggets",
                 City = "Denver",
@@ -480,7 +480,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.12 250)", Secondary = "oklch(0.78 0.16 75)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "3",
                 Name = "Thunder",
                 City = "Oklahoma City",
@@ -497,7 +497,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.6 0.16 240)", Secondary = "oklch(0.68 0.18 35)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "4",
                 Name = "Lakers",
                 City = "Los Angeles",
@@ -514,7 +514,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 300)", Secondary = "oklch(0.82 0.16 85)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "5",
                 Name = "Warriors",
                 City = "Golden State",
@@ -531,7 +531,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.5 0.14 255)", Secondary = "oklch(0.8 0.16 80)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "6",
                 Name = "Bucks",
                 City = "Milwaukee",
@@ -548,7 +548,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.08 155)", Secondary = "oklch(0.9 0.03 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "7",
                 Name = "Knicks",
                 City = "New York",
@@ -565,7 +565,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.16 250)", Secondary = "oklch(0.68 0.18 45)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "8",
                 Name = "Timberwolves",
                 City = "Minnesota",
@@ -582,7 +582,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.4 0.1 255)", Secondary = "oklch(0.65 0.14 165)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "9",
                 Name = "Mavericks",
                 City = "Dallas",
@@ -599,7 +599,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.15 250)", Secondary = "oklch(0.35 0.03 250)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "10",
                 Name = "Heat",
                 City = "Miami",
@@ -616,7 +616,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.5 0.2 20)", Secondary = "oklch(0.72 0.18 45)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "11",
                 Name = "Cavaliers",
                 City = "Cleveland",
@@ -633,7 +633,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.4 0.12 20)", Secondary = "oklch(0.78 0.14 85)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "12",
                 Name = "Suns",
                 City = "Phoenix",
@@ -653,7 +653,7 @@ public static class MOCK_DATA
 
             // === 18 NUEVOS EQUIPOS ===
 
-            new Team {
+            new O_Team {
                 Id = "13",
                 Name = "76ers",
                 City = "Philadelphia",
@@ -670,7 +670,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.14 260)", Secondary = "oklch(0.75 0.12 30)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "14",
                 Name = "Raptors",
                 City = "Toronto",
@@ -687,7 +687,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.18 20)", Secondary = "oklch(0.85 0.02 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "15",
                 Name = "Bulls",
                 City = "Chicago",
@@ -704,7 +704,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.2 30)", Secondary = "oklch(0.9 0.02 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "16",
                 Name = "Hawks",
                 City = "Atlanta",
@@ -721,7 +721,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.65 0.2 40)", Secondary = "oklch(0.9 0.05 100)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "17",
                 Name = "Hornets",
                 City = "Charlotte",
@@ -738,7 +738,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 240)", Secondary = "oklch(0.75 0.12 180)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "18",
                 Name = "Pacers",
                 City = "Indiana",
@@ -755,7 +755,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.16 260)", Secondary = "oklch(0.85 0.1 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "19",
                 Name = "Pistons",
                 City = "Detroit",
@@ -772,7 +772,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 260)", Secondary = "oklch(0.75 0.12 30)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "20",
                 Name = "Magic",
                 City = "Orlando",
@@ -789,7 +789,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 250)", Secondary = "oklch(0.75 0.12 180)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "21",
                 Name = "Wizards",
                 City = "Washington",
@@ -808,7 +808,7 @@ public static class MOCK_DATA
             },
 
             // Equipos añadidos para completar los 30
-            new Team {
+            new O_Team {
                 Id = "22",
                 Name = "Clippers",
                 City = "Los Angeles",
@@ -825,7 +825,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 300)", Secondary = "oklch(0.85 0.06 85)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "23",
                 Name = "Nets",
                 City = "Brooklyn",
@@ -842,7 +842,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.1 0.02 0)", Secondary = "oklch(0.9 0.02 90)" },
                 Conference = Conference.East
             },
-            new Team {
+            new O_Team {
                 Id = "24",
                 Name = "Spurs",
                 City = "San Antonio",
@@ -859,7 +859,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.5 0.12 260)", Secondary = "oklch(0.85 0.02 95)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "25",
                 Name = "Pelicans",
                 City = "New Orleans",
@@ -876,7 +876,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 15)", Secondary = "oklch(0.75 0.12 215)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "26",
                 Name = "Kings",
                 City = "Sacramento",
@@ -893,7 +893,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.18 255)", Secondary = "oklch(0.75 0.12 45)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "27",
                 Name = "Grizzlies",
                 City = "Memphis",
@@ -910,7 +910,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.4 0.12 185)", Secondary = "oklch(0.78 0.12 50)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "28",
                 Name = "Rockets",
                 City = "Houston",
@@ -927,7 +927,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.55 0.18 15)", Secondary = "oklch(0.85 0.02 90)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "29",
                 Name = "Jazz",
                 City = "Utah",
@@ -944,7 +944,7 @@ public static class MOCK_DATA
                 Colors = new TeamColors { Primary = "oklch(0.45 0.12 220)", Secondary = "oklch(0.78 0.14 75)" },
                 Conference = Conference.West
             },
-            new Team {
+            new O_Team {
                 Id = "30",
                 Name = "Trail Blazers",
                 City = "Portland",

@@ -1,7 +1,7 @@
 ﻿using NbaWebTools;
 namespace NbaStatsApi.Features.Player.Entities;
 
-public class Player: BaseEntity
+public class O_Player: BaseEntity
 {
     public string Height { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;

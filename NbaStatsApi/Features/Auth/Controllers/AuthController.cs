@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NbaStatsApi.Exceptions;
 using NbaStatsApi.Features.Auth.DTOs;
 using NbaStatsApi.Features.Auth.Services;
+using NbaStatsApi.Tools.Exceptions;
 
 namespace NbaStatsApi.Features.Auth.Controllers;
 

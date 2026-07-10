@@ -1,4 +1,4 @@
-﻿namespace NbaStatsApi.Exceptions;
+﻿namespace NbaStatsApi.Tools.Exceptions;
 
 public class NotFoundException: Exception
 {
