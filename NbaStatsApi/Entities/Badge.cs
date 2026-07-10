@@ -1,4 +1,4 @@
-﻿namespace NbaStatsApi.Features.Player.Entities;
+﻿namespace NbaStatsApi.Entities;
 
 public class Badge
 {

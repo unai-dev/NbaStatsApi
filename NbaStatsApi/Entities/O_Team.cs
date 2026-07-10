@@ -1,7 +1,7 @@
 ﻿using NbaStatsApi.Features.Common;
 using NbaWebTools;
 
-namespace NbaStatsApi.Features.Team.Entities;
+namespace NbaStatsApi.Entities;
 
 public class O_Team: BaseEntity
 {

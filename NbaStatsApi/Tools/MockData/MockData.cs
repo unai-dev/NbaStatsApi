@@ -1,4 +1,4 @@
-﻿using NbaStatsApi.Features.Player.Entities;
+﻿using NbaStatsApi.Entities;
 using NbaStatsApi.Features.Team.Entities;
 
 namespace NbaStatsApi.Tools.MockData;

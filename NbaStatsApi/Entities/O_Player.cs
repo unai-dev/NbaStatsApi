@@ -1,5 +1,5 @@
 ﻿using NbaWebTools;
-namespace NbaStatsApi.Features.Player.Entities;
+namespace NbaStatsApi.Entities;
 
 public class O_Player: BaseEntity
 {

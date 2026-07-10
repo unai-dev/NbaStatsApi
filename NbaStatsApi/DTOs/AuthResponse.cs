@@ -1,4 +1,4 @@
-﻿namespace NbaStatsApi.Features.Auth.DTOs;
+﻿namespace NbaStatsApi.DTOs;
 
 public class AuthResponse
 {

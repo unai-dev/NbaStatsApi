@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using NbaStatsApi.Features.Auth.Entities;
+using NbaStatsApi.Entities;
 
 namespace NbaStatsApi.Config.DB;
 

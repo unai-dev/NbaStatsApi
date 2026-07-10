@@ -1,4 +1,4 @@
-﻿namespace NbaStatsApi.Features.Common;
+﻿namespace NbaStatsApi.Contracts;
 
 public interface IGenericContract<T> where T : class 
 {

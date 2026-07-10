@@ -2,12 +2,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using NbaStatsApi.Config.DB;
-using NbaStatsApi.Features.Auth.Entities;
-using NbaStatsApi.Features.Auth.Services;
-using NbaStatsApi.Features.Player.Contracts;
-using NbaStatsApi.Features.Player.Services;
-using NbaStatsApi.Features.Team.Contracts;
-using NbaStatsApi.Features.Team.Services;
+using NbaStatsApi.Contracts;
+using NbaStatsApi.Entities;
+using NbaStatsApi.Services;
 using NbaStatsApi.Tools.MockData;
 using System.Text;
 

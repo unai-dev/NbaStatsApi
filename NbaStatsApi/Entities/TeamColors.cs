@@ -1,4 +1,4 @@
-﻿namespace NbaStatsApi.Features.Team.Entities;
+﻿namespace NbaStatsApi.Entities;
 
 public class TeamColors
 {

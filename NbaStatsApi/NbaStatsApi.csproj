@@ -23,14 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Player\Controllers\" />
-    <Folder Include="Features\Player\DTOs\" />
-    <Folder Include="Features\Team\Controllers\" />
-    <Folder Include="Features\Team\DTOs\" />
+    <ProjectReference Include="..\NbaWebTools\NbaWebTools.vbproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NbaWebTools\NbaWebTools.vbproj" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,15 @@
 ﻿using Azure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using NbaStatsApi.Contracts;
+using NbaStatsApi.DTOs;
+using NbaStatsApi.Entities;
 using NbaStatsApi.Exceptions;
-using NbaStatsApi.Features.Auth.DTOs;
-using NbaStatsApi.Features.Auth.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace NbaStatsApi.Features.Auth.Services;
+namespace NbaStatsApi.Services;
 
 public class AuthService : IAuthService
 {

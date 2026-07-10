@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NbaStatsApi.Features.Auth.DTOs;
-using NbaStatsApi.Features.Auth.Services;
+using NbaStatsApi.Contracts;
+using NbaStatsApi.DTOs;
 using NbaStatsApi.Tools.Exceptions;
 
-namespace NbaStatsApi.Features.Auth.Controllers;
+namespace NbaStatsApi.Controllers;
 
 [ApiController]
 [Route("api/auth/")]

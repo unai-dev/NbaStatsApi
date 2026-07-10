@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using NbaStatsApi.Config.DB;
-using NbaStatsApi.Features.Team.Contracts;
-using NbaStatsApi.Features.Team.Entities;
+using NbaStatsApi.Contracts;
+using NbaStatsApi.Entities;
 
-namespace NbaStatsApi.Features.Team.Services;
+namespace NbaStatsApi.Services;
 
 public class TeamService: ITeamContract
 {

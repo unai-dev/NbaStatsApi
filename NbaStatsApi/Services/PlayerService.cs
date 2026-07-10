@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using NbaStatsApi.Config.DB;
-using NbaStatsApi.Features.Player.Contracts;
-using NbaStatsApi.Features.Player.Entities;
+using NbaStatsApi.Contracts;
+using NbaStatsApi.Entities;
 
-namespace NbaStatsApi.Features.Player.Services;
+namespace NbaStatsApi.Services;
 
 public class PlayerService: IPlayerContract
 {
