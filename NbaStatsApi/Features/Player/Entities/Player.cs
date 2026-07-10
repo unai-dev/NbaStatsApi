@@ -1,8 +1,8 @@
-﻿namespace NbaStatsApi.Entities;
+﻿using NbaWebTools;
+namespace NbaStatsApi.Features.Player.Entities;
 
-public class Player
+public class Player: BaseEntity
 {
-    public string Id { get; set; } = string.Empty;
     public string Height { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;
     public string Slug { get; set; } = string.Empty;

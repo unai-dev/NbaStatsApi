@@ -1,4 +1,5 @@
-﻿using NbaStatsApi.Entities;
+﻿using NbaStatsApi.Features.Player.Entities;
+using NbaStatsApi.Features.Team.Entities;
 
 namespace NbaStatsApi.Data;
 
@@ -21,7 +22,7 @@ public static class MOCK_DATA
                 Team = "Los Angeles Lakers",
                 Positions = new List<string>{ "SF", "PF" },
                 Archetype = "All-Around Superstar",
-                Badges = new Badge { Bronze = 10, Silver = 15, Gold = 25, HallOfFame = 12, Legendary = 5, Total = 67 }
+                Badges = new Badge { Bronze = 10, Silver = 15, Gold = 25, HallOfFame = 12, Legendary = 5, Total = 67 },
             },
 
             new Player

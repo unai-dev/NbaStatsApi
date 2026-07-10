@@ -1,8 +1,10 @@
-﻿namespace NbaStatsApi.Entities;
+﻿using NbaStatsApi.Features.Common;
+using NbaWebTools;
 
-public class Team
+namespace NbaStatsApi.Features.Team.Entities;
+
+public class Team: BaseEntity
 {
-    public string Id { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;
     public string City { get; set; } = string.Empty;
     public string Abbreviation { get; set; } = string.Empty;
@@ -22,17 +24,5 @@ public class Team
 public enum Conference
 {
     East,
-    West
-}
-
-public class TeamRecord
-{
-    public int Wins { get; set; }
-    public int Losses { get; set; }
-}
-
-public class TeamColors
-{
-    public string Primary { get; set; } = string.Empty;
-    public string Secondary { get; set; } = string.Empty;
+    West,
 }
