@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using NbaStatsApi.Config.DB;
-using NbaStatsApi.Contracts;
 using NbaStatsApi.Entities;
 using NbaStatsApi.Services;
 using NbaStatsApi.Tools.MockData;
@@ -20,8 +19,6 @@ builder.Services.AddCors(cfg =>
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IPlayerContract, PlayerService>();
-builder.Services.AddScoped<ITeamContract, TeamService>();
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddIdentityCore<User>()

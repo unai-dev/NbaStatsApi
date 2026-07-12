@@ -1,9 +1,8 @@
-﻿using NbaStatsApi.Features.Common;
-using NbaWebTools;
+﻿using NbaStatsApi.Entities.Common;
 
 namespace NbaStatsApi.Entities;
 
-public class O_Team: BaseEntity
+public class Team: BaseEntity
 {
     public string Name { get; set; } = string.Empty;
     public string City { get; set; } = string.Empty;
@@ -16,12 +15,12 @@ public class O_Team: BaseEntity
     public string Arena { get; set; } = string.Empty;
     public int Founded { get; set; }
     public int Championships { get; set; }
-    public TeamRecord? Record { get; set; } 
+    public TeamRecord? Record { get; set; }
     public TeamColors? Colors { get; set; }
-    public EConference Conference { get; set; }
+    public Conference Conference { get; set; }
 }
 
-public enum EConference
+public enum Conference
 {
     East,
     West,

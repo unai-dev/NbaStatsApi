@@ -1,4 +1,3 @@
 <Solution>
   <Project Path="NbaStatsApi/NbaStatsApi.csproj" />
-  <Project Path="NbaWebTools/NbaWebTools.vbproj" Id="81a0a282-1d47-4d5d-9c83-bc1bdce861a5" />
 </Solution>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NbaStatsApi.Contracts;
 using NbaStatsApi.DTOs;
+using NbaStatsApi.Services;
 using NbaStatsApi.Tools.Exceptions;
 
 namespace NbaStatsApi.Controllers;

@@ -1,6 +1,6 @@
 ﻿using NbaStatsApi.DTOs;
 
-namespace NbaStatsApi.Contracts;
+namespace NbaStatsApi.Services;
 
 public interface IAuthService
 {

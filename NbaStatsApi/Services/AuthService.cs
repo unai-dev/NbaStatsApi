@@ -1,10 +1,9 @@
 ﻿using Azure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using NbaStatsApi.Contracts;
 using NbaStatsApi.DTOs;
 using NbaStatsApi.Entities;
-using NbaStatsApi.Exceptions;
+using NbaStatsApi.Tools.Exceptions;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
